@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>shopping-cart</title>
+  </head>
+  <body>
+    <header class="header-area">
+      <div class="container">
+        <div class="navbar">
+          <div class="navbar-left">
+            <button class="btn-bar">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <div class="navbar-middle">
+            <div class="logo"></div>
+          </div>
+          <div class="navbar-right">
+            <button
+              class="cart-btn"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasRight"
+            >
+              <span class="cart-items">0</span>
+              <i class="fas fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="banner-area">
+      <div class="banner">
+        <div class="banner-image">
+          <img src="./images/banner.png" alt="banner image" />
+        </div>
+        <div class="banner-content">
+          <span class="banner-content-subtitle"> INDOORS </span>
+
+          <span class="banner-content-title">
+            <span id="star">s</span>
+            ee bamboo's new range of indoor furniture
+          </span>
+          <a class="banner-content-link" href="#">See More</a>
+          <span class="banner-content-text">
+            <span id="stars">c</span>
+            lassic meet modern living, bomboo has a fantastic range of indoor
+            furniture, perfect for any modern home.
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="product-area">
+      <div class="container">
+        <h2 class="product-area-title">Featured Product</h2>
+        <div class="row" id="products-dom"></div>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" id="offcanvasRight">
+      <div class="offcanvas-header">
+        <h5>Shopping Cart</h5>
+        <button
+          class="btn-close"
+          type="button"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="shopping-cart">
+          <ul class="cart-list"></ul>
+          <div class="shopping-cart-bottom">
+            <div class="total">
+              <div class="total-title">Subtotal:</div>
+              <span class="total-value">$ 0</span>
+            </div>
+            <button class="btn-clear" type="button">CLEAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
